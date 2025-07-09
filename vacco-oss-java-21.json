@@ -1,0 +1,30 @@
+{
+  "orgId": "vacco-oss",
+  "snapshotsRepo": {
+    "id": "CentralPortalSnapshots",
+    "url": "https://central.sonatype.com/repository/maven-snapshots/",
+    "usernameEnvProperty": "CENTRAL_PORTAL_USERNAME",
+    "passwordEnvProperty": "CENTRAL_PORTAL_PASSWORD",
+    "method": "MavenClassic"
+  },
+  "releasesRepo": {
+    "id": "CentralPortalReleases",
+    "url": "https://central.sonatype.com/api/v1/publisher/upload",
+    "usernameEnvProperty": "CENTRAL_PORTAL_USERNAME",
+    "passwordEnvProperty": "CENTRAL_PORTAL_PASSWORD",
+    "method": "PortalPublisherApiManual"
+  },
+  "publishing": {
+    "id": "Vacco",
+    "devId": "vacco",
+    "devContact": "Vaccove Crana, LLC.",
+    "devEmail": "devops@vacco.io",
+    "mavenSigningKeyEnvProperty": "MAVEN_SIGNING_PRV"
+  },
+  "devConfig": {
+    "versions": {
+      "j8Spec": "io.github.j8spec:j8spec:3.0.1",
+      "javaVersion": "VERSION_21"
+    }
+  }
+}
