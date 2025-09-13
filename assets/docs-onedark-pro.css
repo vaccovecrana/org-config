@@ -1,20 +1,20 @@
 /* OneDark Pro color palette for light/dark themes */
 :root {
-  --bg-color: #FAFAFA; /* OneDark Pro light background */
-  --text-color: #383A42; /* OneDark Pro light foreground */
-  --link-color: #4078F2; /* OneDark Pro blue for links */
-  --code-bg: #F0F0F0; /* OneDark Pro light code background */
-  --code-color: #383A42; /* OneDark Pro light code text */
+  --bg-color: #FAFAFA;     /* OneDark Pro light background */
+  --text-color: #383A42;   /* OneDark Pro light foreground */
+  --link-color: #4078F2;   /* OneDark Pro blue for links */
+  --code-bg: #F0F0F0;      /* OneDark Pro light code background */
+  --code-color: #383A42;   /* OneDark Pro light code text */
   --border-color: #E0E0E0; /* OneDark Pro light border */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #282C34; /* OneDark Pro dark background */
-    --text-color: #ABB2BF; /* OneDark Pro dark foreground */
-    --link-color: #61AFEF; /* OneDark Pro blue for links */
-    --code-bg: #3E4451; /* Lighter gray for better contrast in dark theme */
-    --code-color: #ABB2BF; /* OneDark Pro dark code text */
+    --bg-color: #282C34;     /* OneDark Pro dark background */
+    --text-color: #D6DBE6;   /* OneDark Pro dark foreground */
+    --link-color: #61AFEF;   /* OneDark Pro blue for links */
+    --code-bg: #3E4451;      /* Lighter gray for better contrast in dark theme */
+    --code-color: #BCC0C8;   /* OneDark Pro dark code text */
     --border-color: #3E4451; /* OneDark Pro dark border */
   }
 }
