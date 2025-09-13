@@ -13,7 +13,7 @@
     --bg-color: #282C34; /* OneDark Pro dark background */
     --text-color: #ABB2BF; /* OneDark Pro dark foreground */
     --link-color: #61AFEF; /* OneDark Pro blue for links */
-    --code-bg: #21252B; /* OneDark Pro dark code background */
+    --code-bg: #2C323C; /* Brighter OneDark Pro shade for dark code background */
     --code-color: #ABB2BF; /* OneDark Pro dark code text */
     --border-color: #3E4451; /* OneDark Pro dark border */
   }
@@ -96,7 +96,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   #content blockquote {
-    background: #21252B; /* OneDark Pro dark code background for dark theme */
+    background: #2C323C; /* Brighter OneDark Pro shade for dark theme */
     color: #ABB2BF; /* OneDark Pro dark foreground for dark theme text */
     border-left: 4px solid #3E4451; /* OneDark Pro dark border for dark theme */
   }
