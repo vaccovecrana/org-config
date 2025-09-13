@@ -30,7 +30,7 @@ body {
 
 #sidebar {
   float: left;
-  width: 250px;
+  width: 200px;
   margin-right: 40px; /* Increased for more padding */
   padding: 10px;
   border-right: 1px solid var(--border-color);
