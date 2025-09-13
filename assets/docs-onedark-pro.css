@@ -1,0 +1,109 @@
+/* OneDark Pro color palette for light/dark themes */
+:root {
+  --bg-color: #FAFAFA; /* OneDark Pro light background */
+  --text-color: #383A42; /* OneDark Pro light foreground */
+  --link-color: #4078F2; /* OneDark Pro blue for links */
+  --code-bg: #F0F0F0; /* OneDark Pro light code background */
+  --code-color: #383A42; /* OneDark Pro light code text */
+  --border-color: #E0E0E0; /* OneDark Pro light border */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #282C34; /* OneDark Pro dark background */
+    --text-color: #ABB2BF; /* OneDark Pro dark foreground */
+    --link-color: #61AFEF; /* OneDark Pro blue for links */
+    --code-bg: #21252B; /* OneDark Pro dark code background */
+    --code-color: #ABB2BF; /* OneDark Pro dark code text */
+    --border-color: #3E4451; /* OneDark Pro dark border */
+  }
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+#sidebar {
+  float: left;
+  width: 200px;
+  margin-right: 40px; /* Increased for more padding */
+  padding: 10px;
+  border-right: 1px solid var(--border-color);
+}
+
+#nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+#nav-list li {
+  margin: 5px 0;
+}
+
+#nav-list li.section {
+  margin-left: 20px; /* Indent sections */
+}
+
+#nav-list a {
+  color: var(--link-color); /* Use OneDark Pro link color */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.2s; /* Smooth hover transition */
+}
+
+#nav-list a:hover {
+  color: var(--link-color); /* Keep same color on hover for consistency */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+#content {
+  margin-left: 290px; /* Adjusted to match sidebar margin-right + width */
+  max-width: 800px;
+}
+
+#content h1, #content h2 {
+  border-bottom: 1px solid var(--border-color);
+}
+
+#content a {
+  color: var(--link-color);
+}
+
+#content pre, #content code {
+  font-family: 'Maple Mono', Consolas, 'Courier New', monospace;
+  background: var(--code-bg);
+  color: var(--code-color);
+  border-radius: 8px;
+  padding: 4px 8px 4px 8px;
+}
+
+#content pre {
+  overflow-x: auto;
+}
+
+#content blockquote {
+  background: #F0F0F0; /* OneDark Pro light code background for light theme */
+  color: #383A42; /* OneDark Pro light foreground for light theme text */
+  border-left: 4px solid #E0E0E0; /* OneDark Pro light border for light theme */
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  #content blockquote {
+    background: #21252B; /* OneDark Pro dark code background for dark theme */
+    color: #ABB2BF; /* OneDark Pro dark foreground for dark theme text */
+    border-left: 4px solid #3E4451; /* OneDark Pro dark border for dark theme */
+  }
+}
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+  #sidebar { display: none; }
+  #content { margin-left: 0; }
+}
