@@ -88,7 +88,7 @@ body {
   background: var(--code-bg);
   color: var(--code-color);
   border-radius: 8px;
-  padding: 0px 8px;
+  padding: 4px 8px;
   border: 1px solid #5C6370; /* Subtle border for extra contrast */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.28);
   overflow-x: auto;
