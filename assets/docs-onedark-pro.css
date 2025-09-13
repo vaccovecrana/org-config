@@ -13,7 +13,7 @@
     --bg-color: #282C34; /* OneDark Pro dark background */
     --text-color: #ABB2BF; /* OneDark Pro dark foreground */
     --link-color: #61AFEF; /* OneDark Pro blue for links */
-    --code-bg: #2C323C; /* Brighter OneDark Pro shade for dark code background */
+    --code-bg: #3E4451; /* Lighter gray for better contrast in dark theme */
     --code-color: #ABB2BF; /* OneDark Pro dark code text */
     --border-color: #3E4451; /* OneDark Pro dark border */
   }
@@ -79,6 +79,8 @@ body {
   color: var(--code-color);
   border-radius: 8px;
   padding: 4px 8px 4px 8px;
+  border: 1px solid #5C6370; /* Subtle border for extra contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 #content pre {
@@ -96,9 +98,9 @@ body {
 
 @media (prefers-color-scheme: dark) {
   #content blockquote {
-    background: #2C323C; /* Brighter OneDark Pro shade for dark theme */
+    background: #3E4451; /* Lighter gray for better contrast in dark theme */
     color: #ABB2BF; /* OneDark Pro dark foreground for dark theme text */
-    border-left: 4px solid #3E4451; /* OneDark Pro dark border for dark theme */
+    border-left: 4px solid #5C6370; /* Darker border for contrast */
   }
 }
 
